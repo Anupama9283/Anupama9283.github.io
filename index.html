@@ -1,91 +1,110 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Portfolio</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: #f0f2f5;
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        background: #0a192f;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-      section {
-        padding: 40px 20px;
-        max-width: 800px;
-        margin: auto;
-      }
-      h2 {
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-      }
-      footer {
-        background: #0a192f;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        margin-top: 40px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>I'm an EEE Graduate</h1>
-      <p>Strong foundation in hardware | Passionate about software development</p>
-    </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio - EEE Graduate</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0a192f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .project {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .button {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    footer {
+      background: #0a192f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I am a recent graduate in Electrical and Electronics Engineering, with a strong foundation in circuit design. I have hands-on experience building microcontroller-based solutions and enjoy applying my knowledge to solve real-world problems.
-      </p>
-    </section>
+<header>
+  <h1>Hello, I'm an EEE Graduate</h1>
+  <p>Electronics Enthusiast | Microcontroller Developer | Passionate Engineer</p>
+</header>
 
-    <section>
-      <h2>Project</h2>
-      <p>
-        Designed and implemented a voltage stabilizer that detects voltage fluctuations and corrects them to protect the system.
-      </p>
-      <ul>
-        <li><strong>Simulation:</strong> Tinkercad</li>
-        <li><strong>Microcontroller:</strong> Arduino</li>
-        <li><strong>Language:</strong> C (Arduino IDE)</li>
-        <li><strong>Voltage Sensor:</strong> For sensing voltage variations</li>
-        <li>
-          <strong>GitHub:</strong>
-          <a href="https://github.com/Anupama9283/Voltage-Stabilizer" target="_blank">
-            View Project
-          </a>
-        </li>
-      </ul>
-    </section>
+<section>
+  <h2>About Me</h2>
+  <p>
+    I am a recent graduate in Electrical and Electronics Engineering, with a strong foundation in embedded systems, circuit design, and automation. I have hands-on experience building microcontroller-based solutions and enjoy applying my knowledge to solve real-world problems.
+  </p>
+</section>
 
-    <section>
-      <h2>Resume</h2>
-      <p><em>Upload your resume to GitHub or Google Drive and add a public link here.</em></p>
-     
-      <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:f113bb0f-5eee-440b-9866-a12714b009de" target="_blank">Download Resume</a>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email: anupamarejy3@gmail.com</p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/anupama-rejy" target="_blank">
-          linkedin.com/in/anupama-rejy
+<section>
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>Voltage Stabilizer using Microcontroller</h3>
+    <p>
+      Designed and implemented an automatic voltage stabilizer that uses a voltage sensor and microcontroller to detect input voltage fluctuations and adjust the output using relay-based switching. The system ensures stable output voltage within a safe range.
+    </p>
+    <ul>
+      <li><strong>Technologies:</strong> Embedded C, Voltage Sensor, Relay Modules, Microcontroller</li>
+      <li><strong>GitHub:</strong> 
+        <a href="https://github.com/your-username/voltage-stabilizer" target="_blank">
+          View Project on GitHub
         </a>
-      </p>
-    </section>
+      </li>
+    </ul>
+  </div>
+</section>
 
-    <footer>
-      <p>&copy; 2025 Anupama Rejy. All rights reserved.</p>
-    </footer>
-  </body>
+<section>
+  <h2>Resume</h2>
+  <p>Click below to download my resume:</p>
+  <a href="resume.pdf" class="button" target="_blank">Download Resume</a>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: your.email@example.com</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
+  <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Your Name. All rights reserved.</p>
+</footer>
+
+</body>
 </html>
