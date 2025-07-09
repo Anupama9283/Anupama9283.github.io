@@ -10,7 +10,7 @@
                 padding: 0;
             }
             body{
-                background-color: #cebaba;
+                background-color:white;
                 color: #333;
                 line-height: 1.6;
              }
@@ -27,11 +27,13 @@
                 justify-content: space-between;
                 gap: 20px;
                 display: flex;
+                
 
              }
              .name-heading{
                 font: size 100%;
                 height: auto;
+                display: flex;
              }
              nav a{
                 color: #cebaba;
@@ -41,6 +43,13 @@
                 color: #b79090;
                 cursor: pointer;
                 transform: scale(1.15);
+            
+             }
+             h1{
+                font-weight: bolder;
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               letter-spacing: 2px;
+
              }
              footer{
                 background-color:#222 ;
@@ -52,7 +61,7 @@
                 height: 100px;
              }
              section{
-                background-color: #cebaba;
+                background-color: white;
                 padding: 20px;
                 margin: 20px;
                 text-align: justify;
@@ -93,6 +102,8 @@
                 border-radius: 5px;
                  transform: scale(1.09);
                  border: solid rgb(104, 95, 95);
+                 
+
             }
             .linkedin:hover{
                  transform: scale(1.3);
@@ -105,6 +116,7 @@
                 height: 23px;
                 transform: scale(1.09);
                  border: solid rgb(104, 95, 95);
+                 
                 
             }
             .github:hover{
@@ -123,13 +135,34 @@
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
-                margin: 0;
-                left: 200px;
-                position: absolute;
+                margin: 10px 0;
+            
             }
             footer{
                 justify-content: center;
             }
+            /* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+}
+
+/* Medium and up (tablets/laptops) */
+@media only screen and (min-width: 601px) {
+  body {
+    font-size: 16px;
+  }
+
+  .nav {
+    flex-direction: row;
+  }
+}
+
             
 
          </style>
@@ -137,16 +170,16 @@
     <body>
            <header>
             <div>
-            <img class="image" src="/images/PROFILE PIC.jpg">
+            <img class="image" src="images/PROFILE PIC.jpg">
             </div>
            
             <div class="logo">
-            <a href="https://www.linkedin.com/in/anupama-rejy/"><img class="linkedin" src="/images/linkedin.png"></a>
+            <a href="https://www.linkedin.com/in/anupama-rejy/" target="_blank" title="Linkedin"><img class="linkedin" src="images/linkedin.png" ></a>
            
-            <a href="https://github.com/Anupama9283"><img class="github" src="/images/github.png"></a>
+            <a href="https://github.com/Anupama9283" target="_blank" title="Github"><img class="github" src="images/github.png"></a>
             
             
-            <a href="https://www.instagram.com/anu_treesa_rejy?igsh=MTdvaXhqdG92cXFkdQ=="><img class="insta" src="/images/insta.png"></a>
+            <a href="https://www.instagram.com/anu_treesa_rejy?igsh=MTdvaXhqdG92cXFkdQ==" target="_blank" title="Instagram"><img class="insta" src="images/insta.png"></a>
             </div>
        
             
@@ -169,7 +202,7 @@
             </header>
             <section id="About">
             <h1>ABOUT</h1>
-            <p>
+            <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
                 I am a recent graduate in Electrical and Electronics Engineering,
                 passionate about bridging the gap between hardware and software solutions.
                 With hands-on experience in microcontroller-based projects and a growing interest in front-end web development,
@@ -177,23 +210,25 @@
                 My academic projects reflect my curiosity and problem-solving mindset.
                 I’m currently expanding my skills in web technologies and looking forward to contributing to innovative, tech-driven environments.
                 I have created a detailed section of introduction in my github feel free to visit at
-                <a style="color:#312e2e; ;" href="https://github.com/Anupama9283/Anupama9283/blob/8e94fd54bf135da7d8b0c905d60549e9fefc4ee5/README.md">Github</a>
+                <a style="color:#312e2e; ;" href="https://github.com/Anupama9283/Anupama9283/blob/8e94fd54bf135da7d8b0c905d60549e9fefc4ee5/README.md" target="_blank">Github</a>
              </p>
              
            
         </section>
         <section id="Education">
             <h1>EDUCATION</h1>
-            <p>
-                Bachelor of Engineering in Electrical and Electronics Engineering from College of Engineering Kallooppara<br><b>MINOR DEGREE </b><br>Completed a Minor degree in Object Oriented Programming Language from College Of Engineering Kallooppara.
-                <br><b>MOOC COURSE</b><br>Taken a MOOC Course on <b>Object Oriented system development Using UML, Java And Patterns</b>, which was a twelve week course
-                from <b>IIT Kharagpur</b>. Duration was from June to April 2024.
+            <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <b>Bachelor of Engineering in Electrical and Electronics Engineering from College of Engineering Kallooppara</b>
+
+                <br><b><ul><li>MINOR DEGREE </b><br>Completed a Minor degree in Object Oriented Programming Language from College Of Engineering Kallooppara.</li>
+                <br><b><li>MOOC COURSE</b><br>Taken a MOOC Course on <b>Object Oriented system development Using UML, Java And Patterns</b>, which was a twelve week course
+                from <b>IIT Kharagpur</b>. Duration was from June to April 2024.</li></ul>
             </p>
         </section>
         <section id="Project">
             <h1>PROJECT</h1>
             <h2>IMPLEMENTATION OF STABILIZER</h2>
-            <P>
+            <P style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
                 This project focuses on the design and implementation of an automatic voltage stabilizer using a microcontroller.
                 The system continuously monitors the input voltage using a voltage sensor and compares it with a predefined desired voltage range.
                 If any deviation is detected, the microcontroller triggers appropriate control actions to regulate the output voltage,
@@ -201,28 +236,28 @@
                 The goal of this project is to protect electrical appliances from voltage fluctuations and improve overall system reliability. 
                 This solution reflects both hardware interfacing and real-time decision-making through embedded programming.
                 
-                <br><b>View project on github: <a style="color: #312e2e;" href="https://github.com/Anupama9283/Voltage-Stabilizer.git">link to Github</a></b>
+                <br><b>View project on github: <a style="color: #312e2e;" href="https://github.com/Anupama9283/Voltage-Stabilizer.git" target="_blank">link to Github</a></b>
             </P>
         </section>
         <section id="Internship">
             <h1>INTERNSHIP</h1>
-            <p>
+            <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
                 Successfully completed a one week internship program on python at <B>AESTER INDIA PVT. LTD</B>, Ernakulam,Kerala during my second year of Engineering. 
             </p>
 
         </section>
         <section id="Resume">
             <h1>RESUME</h1>
-            <p>You can download my resume here:</p>
-            <a style="color: #312e2e;" href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:abe0656c-a01a-4908-906c-b73312765ceb" download class="download-btn">Download Resume</a>
+            <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">You can download my resume here:</p>
+            <a style="color: #312e2e;" href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:abe0656c-a01a-4908-906c-b73312765ceb" download class="download-btn" target="_blank">Download Resume</a>
 
         </section>
         <section id="Contact">
             <h1>CONTACT</h1>
             <ul>
-                <li>Email: <a style="color: #312e2e;"href="mailto:anupamarejy3@gmail.com">anupamarejy3@gmail.com</a></li>
-                <li>Linkedin: <a style="color: #312e2e;"  href="https://www.linkedin.com/in/anupama-rejy/">Anupama-rejy</a></li>
-                <li>Github: <a style="color: #312e2e;"  href="https://github.com/Anupama9283">Anupama9283</a></li>
+                <li>Email: <a style="color: #312e2e;"href="mailto:anupamarejy3@gmail.com" target="_blank">anupamarejy3@gmail.com</a></li>
+                <li>Linkedin: <a style="color: #312e2e;"  href="https://www.linkedin.com/in/anupama-rejy/" target="_blank">Anupama-rejy</a></li>
+                <li>Github: <a style="color: #312e2e;"  href="https://github.com/Anupama9283" target="_blank">Anupama9283</a></li>
                 <li >Number :9656049283 </li>
                 
             </ul>
